@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FastMRT</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">FastMRT</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -23,16 +27,19 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Team</a>
+          <a class="nav-link" href="#">Datasets</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Publications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Datasets</a>
+          <a class="nav-link" href="https://github.com/minipuding/FastMRT">Github</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Download</a>
         </li>
       </ul>
     </div>
@@ -41,7 +48,9 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">FastMRT</h1>
-      <p class="lead">FastMRT is a collaborative research project from Facebook AI andNYU Langone Health that aims to improve the speed and quality of MRI scans for thermometery. Our goal is to make MRI scans up to 10x faster while maintaining or even improving image quality. We believe that faster MRI scans will improve the patient experience, increase access to MRI, and ultimately improve patient outcomes.      </p>
+      <p class="lead">FastMRT is a collaborative research project that aims to improve the speed and quality of MRI
+        scans for thermometery. Our goal is to make MRI scans up faster while maintaining or even improving image
+        quality. </p>
     </div>
   </div>
 
@@ -49,71 +58,236 @@
     <div class="row">
       <div class="col-md-8">
         <h2>About FastMRT</h2>
-        <p>FastMRT is a collaborative research project between Facebook AI and NYU Langone Health that aims to improve the speed and quality of MRI scans for thermometery. Our goal is to make MRI scans up to 10x faster while maintaining or even improving image quality. We believe that faster MRI scans will improve the patient experience, increase access to MRI, and ultimately improve patient outcomes.</p>
-        <p>Our team of researchers and engineers are working on developing new machine learning algorithms and hardware solutions to achieve this goal. We are also working with clinical partners to validate our methods and ensure that they are safe and effective for patients.</p>
-        <p>If you are interested in learning more about our research or collaborating with us, please contact us at <a href="mailto:fastmrt@fb.com">fastmrt@fb.com</a>.</p>
+        <p>FastMRT is a collaborative research project that aims to improve the speed and quality of MRI scans for
+          thermometery. </p>
+        <p>Our team of researchers and engineers are working on developing new machine learning algorithms to achieve
+          this goal. We are also working with clinical partners to validate our methods and ensure that they are safe
+          and effective for patients.</p>
+        <p>If you are interested in learning more about our research or collaborating with us, please contact us at <a
+            href="mailto:fastmr.thermometry@gmail.com">fastmr.thermometry@gmail.com</a>.</p>
       </div>
       <div class="col-md-4">
         <h2>Latest News</h2>
         <ul class="list-group">
           <li class="list-group-item">
-            <h5 class="mb-1">FastMRT Challenge Results Announced</h5>
+            <h5 class="mb-1">FastMRT Codes is Available</h5>
             <small class="text-muted">June 1, 2020</small>
-            <p>The results of the FastMRT Challenge have been announced! Congratulations to all the winners and participants.</p>
+            <p>We public the github codes at <a
+                href="https://github.com/minipuding/FastMRT">https://github.com/minipuding/FastMRT</a>.</p>
           </li>
           <li class="list-group-item">
             <h5 class="mb-1">FastMRT Dataset Release</h5>
             <small class="text-muted">May 1, 2020</small>
-            <p>The FastMRT dataset is now available for download! Visit our Datasets page to learn more about phantom, ex vivo and in vivo datasets.</p>
+            <p>The FastMRT dataset is now available for download! Visit our Datasets page to learn more about phantom
+              and ex vivo datasets.</p>
           </li>
           <li class="list-group-item">
-            <h5 class="mb-1">FastMRT at ISMRM 2020</h5>
-            <small class="text-muted">April 1, 2020</small>
-            <p>FastMRT researchers presented their work at the ISMRM 2020 conference. Check out our Publications page for more information.</p>
+            <h5 class="mb-1">FastMRT package Release</h5>
+            <small class="text-muted">May 2, 2023</small>
+            <p>FastMRT package is released on PyPI. You can view at <a href="https://pypi.org/project/fastmrt/">here</a>
+              or install by command `pip install fastmrt`.</p>
           </li>
         </ul>
       </div>
     </div>
-  <div class="row">
-    <div class="col-md-8">
-      <h2>Our Research</h2>
-      <p>At FastMRT, we are working on developing new machine learning algorithms and hardware solutions to improve the speed and quality of MRI scans for thermometery. Our research focuses on three main areas:</p>
-      <ul>
-        <li><strong>Image Reconstruction:</strong> We are developing new algorithms to reconstruct high-quality images from undersampled MRI data. By reducing the amount of data needed for each scan, we can make MRI scans faster without sacrificing image quality.</li>
-        <li><strong>Hardware Acceleration:</strong> We are exploring new hardware solutions to accelerate MRI scans. By optimizing the hardware used in MRI machines, we can reduce scan times and improve patient throughput.</li>
-        <li><strong>Validation and Clinical Translation:</strong> We are working with clinical partners to validate our methods and ensure that they are safe and effective for patients. We are also exploring ways to integrate our methods into clinical workflows to improve patient outcomes.</li>
-      </ul>
-      <p>If you are interested in learning more about our research or collaborating with us, please contact us at <a href="mailto:fastmrt@fb.com">fastmrt@fb.com</a>.</p>
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Our Research</h2>
+        <p>At FastMRT, we are working on developing new machine learning algorithms and hardware solutions to improve
+          the speed and quality of MRI scans for thermometery. Our research focuses on three main areas:</p>
+        <ul>
+          <li><strong>Image Reconstruction:</strong> We are developing new algorithms to reconstruct high-quality images
+            from undersampled MRI data. By reducing the amount of data needed for each scan, we can make MRI scans
+            faster without sacrificing image quality.</li>
+          <li><strong>Hardware Acceleration:</strong> We are exploring new hardware solutions to accelerate MRI scans.
+            By optimizing the hardware used in MRI machines, we can reduce scan times and improve patient throughput.
+          </li>
+          <li><strong>Validation and Clinical Translation:</strong> We are working with clinical partners to validate
+            our methods and ensure that they are safe and effective for patients. We are also exploring ways to
+            integrate our methods into clinical workflows to improve patient outcomes.</li>
+        </ul>
+        <p>If you are interested in learning more about our research or collaborating with us, please contact us at <a
+            href="mailto:fastmrt@fb.com">fastmrt@fb.com</a>.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>Get Involved</h2>
+        <p>There are many ways to get involved with FastMRT:</p>
+        <ul>
+          <li><strong>Download the Dataset:</strong> The FastMRT dataset is available for download on our Datasets page.
+            Use it to develop your own machine learning algorithms and test them against state-of-the-art methods.</li>
+          <li><strong>Participate in the Challenge:</strong> We host an annual FastMRT Challenge to encourage
+            researchers to develop new algorithms for MRI reconstruction. Visit our Challenge page to learn more.</li>
+          <li><strong>Collaborate with Us:</strong> We are always looking for new collaborators to help us advance the
+            field of MRI reconstruction. If you are interested in working with us, please contact us at <a
+              href="mailto:fastmrt@fb.com">fastmrt@fb.com</a>.</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-4">
-      <h2>Get Involved</h2>
-      <p>There are many ways to get involved with FastMRT:</p>
-      <ul>
-        <li><strong>Download the Dataset:</strong> The FastMRT dataset is available for download on our Datasets page. Use it to develop your own machine learning algorithms and test them against state-of-the-art methods.</li>
-        <li><strong>Participate in the Challenge:</strong> We host an annual FastMRT Challenge to encourage researchers to develop new algorithms for MRI reconstruction. Visit our Challenge page to learn more.</li>
-        <li><strong>Collaborate with Us:</strong> We are always looking for new collaborators to help us advance the field of MRI reconstruction. If you are interested in working with us, please contact us at <a href="mailto:fastmrt@fb.com">fastmrt@fb.com</a>.</li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h2>Contact Us</h2>
-            <p>If you have any questions or comments about FastMRT, please contact us at <a href="mailto:fastmrt@fb.com">fastmrt@fb.com</a>.</p>
+            <p>If you have any questions or comments about FastMRT, please contact us at <a
+                href="mailto:fastmr.thermometry@gmail.com">fastmr.thermometry@gmail.com</a>.</p>
           </div>
         </div>
       </div>
 
       <footer class="footer">
         <div class="container">
-          <span class="text-muted">FastMRT &copy; 2021</span>
+          <span class="text-muted">FastMRT &copy; 2023</span>
         </div>
       </footer>
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-    </html>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    </div>
+
+    <div class="jumbotron text-left" style="margin-bottom:0">
+      <!-- <p>Footer</p> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10">
+            <h2 class="text-center"> fastMRT Dataset Sharing Agreement </h2>
+            <br>
+            <br>
+            By registering for downloads from the fastMRT Dataset, I agree to
+            this Dataset Sharing Agreement.
+            <ol>
+              <li>The fastMRT Dataset is considered proprietary to and owned by
+                Institute of Life Instruments, Shanghai Jiaotong University (ILI-SJTU). 
+                Other than the rights granted herein, ILI-SJTU retains all rights, title, and interest in the fastMRT Dataset. </li>
+              <li>Subject to the provisions of this Agreement, ILI-SJTU shall give to me access to and the right to download the fastMRT Dataset, and
+                ILI-SJTU hereby grants to me a non-exclusive, royalty-free license to use the fastMRT Dataset for internal research or educational purposes only and only as permitted by this Agreement. 
+                This Agreement conveys no other rights of any sort with respect to the fastMRT Dataset or the intellectual property rights embodied therein.</li>
+              <li>I will receive a download link to access the fastMRT Dataset without charge for internal research or educational purposes only. 
+                The link will permit me to download a verbatim copy of the fastMRT Dataset solely for such use. 
+                I will NOT SHARE THE DOWNLOAD LINK to the fastMRT Dataset with others. 
+                If another user within my organization or elsewhere wishes to obtain a copy
+                of and use the fastMRT Dataset, they must register as an individual user and comply with all the terms of this Agreement.</li>
+              <li>I will use the fastMRT Dataset for internal research or educational purposes only and only as permitted by this Agreement.</li>
+              <li>I further agree to:
+                <ol type="a">
+                  <li>Use the fastMRT Dataset in compliance with all laws,
+                    governmental regulations and guidelines, including obtaining all approvals for the proposed use of the fastMRT Dataset to comply with federal, 
+                    state, local and institutional policies and regulations.</li>
+                  <li>Not SELL OR OTHERWISE MONETIZE any portion or all of the fastMRT Dataset.</li>
+                  <li>Not DISTRIBUTE, PUBLISH, REPRODUCE, RETRANSMIT, COMMERCIALLY EXPLOIT, COPY OR OTHERWISE TRANSFER any portion or all of the fastMRT Dataset or 
+                    any subsequent variables or data files derived from the fastMRT Dataset to any person or
+                    entity other than individuals under my direct supervision and other than for uses in academic publications and
+                    presentations with citations as provided in paragraph 6 below. 
+                    I will ensure that no one will be allowed to take or send fastMRT Dataset to any other location, unless prior written permission is obtained from ILI-SJTU.</li>
+                  <li>Require anyone who receives or has access to the fastMRT Dataset to agree to the same restrictions and conditions on the use and/or disclosure of the fastMRT Dataset that apply to me.</li>
+                  <li>Maintain the security and confidentiality of the fastMRT Dataset and use appropriate safeguards to prevent any unauthorized use or disclosure of the fastMRT Dataset.</li>
+                </ol>
+              </li>
+              <li>I agree all publications and presentations resulting from any use of the fastMRT Dataset must cite use of the fastMRT Dataset as follows:
+                <ol type="a">
+                  <li>In any published abstract, I will cite “ILI-SJTU fastMRT” as the source of the data in the abstract.</li>
+                  <li>In any published manuscripts using data from ILI-SJTU fastMRT,
+                    I will reference the following paper: Knoll et al Radiol Artif Intell<br>. 2020 Jan 29;2(1):e190007.<br> doi: 10.1148/ryai.2020190007.<br> <a href="https://pubs.rsna.org/doi/10.1148/ryai.2020190007">https://pubs.rsna.org/doi/10.1148/ryai.2020190007</a><br> and the arXiv paper, <a href="https://arxiv.org/abs/1811.08839">https://arxiv.org/abs/1811.08839</a>.<br>
+                    <br>
+                    I will include language similar to the following in the methods section of my manuscripts in order to accurately acknowledge data source: 
+                    “Data used in the preparation of this article were obtained from the ILI-SJTU fastMRT Initiative database (<a href="https://fastMRT.med.ILI-SJTU.edu">fastMRT.med.ILI-SJTU.edu</a>).[citation
+                    of Knoll et al Radiol Artif Intell<br>. 2020 Jan 29;2(1):e190007.<br> doi: 10.1148/ryai.2020190007. (<a href="https://pubs.rsna.org/doi/10.1148/ryai.2020190007">https://pubs.rsna.org/doi/10.1148/ryai.2020190007</a>), 
+					and the arXiv paper: <a href="https://arxiv.org/abs/1811.08839">https://arxiv.org/abs/1811.08839</a>]
+                    As such, ILI-SJTU fastMRT investigators provided data but did not
+                    participate in analysis or writing of this report. A listing
+                    of ILI-SJTU fastMRT investigators, subject to updates, can be
+                    found at:<a href="https://fastMRT.med.ILI-SJTU.edu">fastMRT.med.ILI-SJTU.edu</a>.The
+                    primary goal of fastMRT is to test whether machine learning
+                    can aid in the reconstruction of medical images.” I
+                    acknowledge that, depending upon the length and focus of the
+                    manuscript, it may be appropriate to include more or less
+                    than the above, and further acknowledge that inclusion of
+                    some variation of the language shown above is mandatory.<br>
+                    <br>
+                    Other than citations as provided in this paragraph 6, I will
+                    not use the name, symbol, or mark of ILI-SJTU or any of its
+                    affiliates or of the fastMRT Dataset in connection with any
+                    products, promotion, financing, advertising, or sales
+                    literature or in any form of publicity without the prior
+                    written approval of ILI-SJTU. </li>
+                </ol>
+              </li>
+              <li>I will make no attempt to use the information in the fastMRT
+                Dataset to identify the individual subjects or to contact such
+                individuals or link the fastMRT Dataset with any other dataset.
+              </li>
+              <li>Except as contemplated by paragraph 7 above, I will not
+                contact ILI-SJTU or anyone at ILI-SJTU concerning any individual subjects
+                or seeking information about them.</li>
+              <li>The fastMRT Dataset has not been reviewed or approved by the
+                Food and Drug Administration, and is not provided for clinical
+                use. In no event shall any data or images in the fastMRT Dataset
+                or generated through the use of the fastMRT Dataset be used or
+                relied upon in the diagnosis or provision of patient care.</li>
+              <li>I will report to ILI-SJTU any use or disclosure of the fastMRT
+                Dataset that is not permitted by this Agreement or required by
+                law within 5 business days of becoming aware of such use or
+                disclosure.</li>
+              <li>When I have completed my work using the fastMRT Dataset, I
+                will destroy all copies of the fastMRT Dataset and retain no
+                copies thereof.</li>
+              <li>I understand that failure to abide by the terms of this
+                Agreement will result in immediate termination of use as well as
+                privileges to access the fastMRT DataSet. In the event that ILI-SJTU
+                determines that I have violated this Agreement or other
+                impermissible use has been made, ILI-SJTU may direct that I
+                immediately destroy all copies of the fastMRT Dataset and retain
+                no copies thereof even if I did not cause the violation or
+                impermissible use.</li>
+              <li>The fastMRT dataset is provided “as is”. ILI-SJTU MAKES NO
+                WARRANTIES, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTIES OF
+                MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE OR OF
+                NON-INFRINGEMENT, AND HEREBY DISCLAIMS THE SAME. </li>
+              <li>In no event shall ILI-SJTU, or ILI-SJTU partners be liable for any use
+                by me of the fastMRT Dataset resulting in any loss, claim,
+                damage or liability, of whatsoever kind or nature, which may
+                arise from or in connection with this AGREEMENT or the use,
+                handling or storage of the fastMRT Dataset. </li>
+              <li>I agree to indemnify, defend, and hold ILI-SJTU and its affiliates
+                and affiliated hospitals, and each of their trustees, directors,
+                officers, representatives, partners, faculty, students,
+                volunteers, employees, or agents (each, an “ILI-SJTU Indemnitee”)
+                harmless from any claims, losses or damages, including legal
+                fees, arising out of or resulting from my access to and/or use
+                of the fastMRT Dataset or any failure to abide by the terms of
+                this Agreement, except to the extent caused by an ILI-SJTU
+                Indemnitee. </li>
+              <li>This Agreement shall be governed by and interpreted in accordance with the laws of the People's Republic of China. The exclusive venue for any dispute relating to this Agreement shall be in the courts of Shanghai, China.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center"> <br>
+      <br>
+      By entering my electronic signature here, I agree to the data use
+      agreement above.<br>
+      <br>
+      <br>
+      <form action="" method="post"> 
+        <div class="input text"> <label for="name">Full Name:</label> <input id="name" name="name" required type="text" value=""> </div>
+        <div class="input text"> <label for="email">Email:</label> <input id="email" name="email" required type="text" value=""> </div>
+        <div class="input text"> <label for="institution">Institution:</label> <input id="institution" name="institution" required type="text" value=""> </div>
+        <div class="input submit"> <input value="Submit" type="submit"> </div>
+      </form>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+</body>
+
+</html>
