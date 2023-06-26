@@ -1,0 +1,35 @@
+name: Send fastmrt dataset link email on form submission
+on:
+  repository_dispatch:
+    types: [form_submission]
+jobs:
+  send_email:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Send email
+      run: |
+        import smtplib
+        from email.mime.text import MIMEText
+
+        # 获取表单数据
+        name = '${{ github.event.head_commit.author.name }}'
+        email = '${{ github.event.head_commit.author.email }}'
+        message = '${{ github.event.head_commit.message }}'
+
+        # 构造邮件内容
+        subject = 'New commit on GitHub'
+        body = f'Dear {name},\n\nA new commit has been made on your GitHub repository. The commit message is "{message}".\n\nBest regards,\nYour team'
+        msg = MIMEText(body)
+        msg['Subject'] = subject
+        msg['From'] = '${{ secrets.FASTMRT_EMAIL }}'
+        msg['To'] = email
+
+        # 发送邮件
+        smtp = smtplib.SMTP('smtp.gmail.com', 587)
+        smtp.ehlo()
+        smtp.starttls()
+        smtp.login('${{ secrets.FASTMRT_EMAIL }}', '${{ secrets.FASTMRT_EMAIL_PASSWARD }}')
+        smtp.sendmail('${{ secrets.FASTMRT_EMAIL }}', email, msg.as_string())
+        smtp.quit()
