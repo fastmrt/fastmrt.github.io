@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="gather.js"></script>
 </head>
 
 <body>
@@ -280,8 +281,8 @@
       <form action="" method="post"> 
         <div class="input text"> <label for="name">Full Name:</label> <input id="name" name="name" required type="text" value=""> </div>
         <div class="input text"> <label for="email">Email:</label> <input id="email" name="email" required type="text" value=""> </div>
-        <div class="input text"> <label for="institution">Institution:</label> <input id="institution" name="institution" required type="text" value=""> </div>
-        <div class="input submit"> <input value="Submit" type="submit"> </div>
+        <div class="input text"> <label for="message">Message:</label> <input id="message" name="message" required type="text" value=""> </div>
+        <button type="button" onclick="submitForm()">Submit</button>
       </form>
       <br>
       <br>
