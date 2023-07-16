@@ -2,7 +2,7 @@ function submitForm() {
     var name = $('#name').val();
     var email = $('#email').val();
     var message = $('#message').val();
-    var token = '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';
+    var token = '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';
     $.ajax({
       url: 'https://api.github.com/repos/fastmrt/fastmrt.github.io/dispatches',
       type: 'POST',
@@ -19,7 +19,7 @@ function submitForm() {
         }
       }),
       success: function(result) {
-        alert('Form submitted successfully!');
+        $('#message').text('Form submitted successfully!');
       },
       error: function(xhr, status, error) {
         alert('Form submission failed: ' + error);

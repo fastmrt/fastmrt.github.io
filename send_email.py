@@ -6,6 +6,8 @@ from email.mime.text import MIMEText
 # 获取环境变量
 email_address = os.environ['FASTMRT_EMAIL']
 email_password = os.environ['FASTMRT_EMAIL_PASSWARD']
+print(email_address)
+print(email_password)
 
 # 获取命令行参数
 name = sys.argv[1]
