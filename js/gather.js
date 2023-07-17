@@ -2,7 +2,7 @@ function submitForm() {
     var name = $('#name').val();
     var email = $('#email').val();
     var institution = $('#institution').val();
-    var token = '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';
+    var token = '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';
     $.ajax({
       url: 'https://api.github.com/repos/fastmrt/fastmrt.github.io/dispatches',
       type: 'POST',
