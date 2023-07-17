@@ -10,4 +10,4 @@ jobs:
       uses: actions/checkout@v2
     - name: Send email
       run: |
-        docker run --rm -e FASTMRT_EMAIL=$FASTMRT_EMAIL -e FASTMRT_EMAIL_PASSWARD=$FASTMRT_EMAIL_PASSWARD -v $(pwd):/app -w /app python:3 python send_email.py "${{ github.event.client_payload.name }}" "${{ github.event.client_payload.email }}" "${{ github.event.client_payload.message }}"
+        docker run --rm -e FASTMRT_EMAIL=$FASTMRT_EMAIL -e FASTMRT_EMAIL_PASSWARD=$FASTMRT_EMAIL_PASSWARD -e FASTMRT_REMINDER_EMAIL=$FASTMRT_REMINDER_EMAIL -e FASTMRT_FULL_DATASET=$FASTMRT_FULL_DATASET -e FASTMRT_SOURCE_DATASET=$FASTMRT_SOURCE_DATASET -e FASTMRT_DIFFUSION_AUGMENT_DATASET=$FASTMRT_DIFFUSION_AUGMENT_DATASET -v $(pwd):/app -w /app python:3 python send_email.py "${{ github.event.client_payload.name }}" "${{ github.event.client_payload.email }}" "${{ github.event.client_payload.message }}"
