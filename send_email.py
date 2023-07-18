@@ -30,16 +30,6 @@ if __name__ == '__main__':
     to_email = sys.argv[2]
     institution = sys.argv[3]
 
-    # 获取环境变量
-    send_email_address = 'fastmrt@foxmail.com'
-    send_email_password = 'hzdljncxwglahbia'
-    # reminder_email_address = 'fastmr.thermometry@gmail.com'
-
-    # # 获取命令行参数
-    # name = 'sijie xu'
-    # to_email = 'sijie.x@sjtu.edu.cn'
-    # institution = 'SJTU'
-
     # send back message
     main_subject = 'FastMRT Dataset Download Links'
     main_body = f"Dear {name},\n\nThank you for applying for our dataset. "\
