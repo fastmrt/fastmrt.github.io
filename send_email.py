@@ -31,8 +31,8 @@ if __name__ == '__main__':
     institution = sys.argv[3]
 
     # 获取环境变量
-    # send_email_address = 'fastmrt@foxmail.com'
-    # send_email_password = 'hzdljncxwglahbia'
+    send_email_address = 'fastmrt@foxmail.com'
+    send_email_password = 'hzdljncxwglahbia'
     # reminder_email_address = 'fastmr.thermometry@gmail.com'
 
     # # 获取命令行参数
