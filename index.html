@@ -7,9 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FastMRT</title>
   <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script> -->
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML" async></script>
   <script src="./js/gather.js"></script>
   <script src="./js/jquery.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$']]},
+        messageStyle: "none"
+    });
+  </script>
   <!-- <script src="./js/jquery.min.js"></script> -->
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -34,24 +40,20 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Datasets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Publications</a>
+          <a class="nav-link" href="#dataset">Dataset</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/minipuding/FastMRT">Github</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact-us">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Download</a>
+          <a class="nav-link" href="#download">Download</a>
         </li>
       </ul>
     </div>
   </nav>
-
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">FastMRT</h1>
@@ -78,13 +80,13 @@
         <ul class="list-group">
           <li class="list-group-item">
             <h5 class="mb-1">FastMRT Codes is Available</h5>
-            <small class="text-muted">June 1, 2020</small>
+            <small class="text-muted">June 1, 2023</small>
             <p>We public the github codes at <a
                 href="https://github.com/minipuding/FastMRT">https://github.com/minipuding/FastMRT</a>.</p>
           </li>
           <li class="list-group-item">
             <h5 class="mb-1">FastMRT Dataset Release</h5>
-            <small class="text-muted">May 1, 2020</small>
+            <small class="text-muted">May 1, 2023</small>
             <p>The FastMRT dataset is now available for download! Visit our Datasets page to learn more about phantom
               and ex vivo datasets.</p>
           </li>
@@ -98,44 +100,26 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8">
-        <h2>Our Research</h2>
-        <p>At FastMRT, we are working on developing new machine learning algorithms and hardware solutions to improve
-          the speed and quality of MRI scans for thermometery. Our research focuses on three main areas:</p>
-        <ul>
-          <li><strong>Image Reconstruction:</strong> We are developing new algorithms to reconstruct high-quality images
-            from undersampled MRI data. By reducing the amount of data needed for each scan, we can make MRI scans
-            faster without sacrificing image quality.</li>
-          <li><strong>Hardware Acceleration:</strong> We are exploring new hardware solutions to accelerate MRI scans.
-            By optimizing the hardware used in MRI machines, we can reduce scan times and improve patient throughput.
-          </li>
-          <li><strong>Validation and Clinical Translation:</strong> We are working with clinical partners to validate
-            our methods and ensure that they are safe and effective for patients. We are also exploring ways to
-            integrate our methods into clinical workflows to improve patient outcomes.</li>
-        </ul>
-        <p>If you are interested in learning more about our research or collaborating with us, please contact us at <a
-            href="mailto:fastmrt@fb.com">fastmrt@fb.com</a>.</p>
+      <div class="col-md-12">
+        <h2><a name="dataset">Dataset</a></h2>
+        <p>Our dataset was acquired through the application of a 128-element high-intensity focused ultrasound transducer (with a frequency of $1.1 MHz$, a focal length of $150 mm$, 
+          and a focal radius of $120 mm$), followed by imaging with a 3T MR system (Discovery MR750; GE Healthcare, Milwaukee, WI).</p>
+        <p>The images were obtained using the Fast Spoiled Gradient Echo (FSPGR) sequence, with 96 phase encoding steps, a TR/TE of $12/16 ms$, a flip angle of $30^\circ$, 
+          a slice thickness of $3mm$, a field of view (FOV) of $28\times 28 cm^2$, a Number of Excitation (NEX) of 1, and a bandwidth of $\pm62.5kHz$.</p>
+        <p>The dataset comprises of two distinct parts, namely in vivo heating data and ex vivo lean tissue heating data. For each part, 
+          there are 96 heating samples (consisting of 2186 slices) and 105 samples (consisting of 1623 slices), respectively, with each sample containing either 1 or 3 layers. </p>
+        <p>The temperature change at the focus was approximately 30 degrees Celsius, and the focus position was consistently located at the center of the image.</p>
+        <p>In order to enhance the speed of temperature measurement, we employed a smaller TR and fewer phase encoding steps, which led to lower signal-to-noise ratio and resolution of the acquired images. This underscores the significance of utilizing fast temperature measurement algorithms to compensate for the reduced image quality.</p>
+        
       </div>
-      <div class="col-md-4">
-        <h2>Get Involved</h2>
-        <p>There are many ways to get involved with FastMRT:</p>
-        <ul>
-          <li><strong>Download the Dataset:</strong> The FastMRT dataset is available for download on our Datasets page.
-            Use it to develop your own machine learning algorithms and test them against state-of-the-art methods.</li>
-          <li><strong>Participate in the Challenge:</strong> We host an annual FastMRT Challenge to encourage
-            researchers to develop new algorithms for MRI reconstruction. Visit our Challenge page to learn more.</li>
-          <li><strong>Collaborate with Us:</strong> We are always looking for new collaborators to help us advance the
-            field of MRI reconstruction. If you are interested in working with us, please contact us at <a
-              href="mailto:fastmrt@fb.com">fastmrt@fb.com</a>.</li>
-        </ul>
-      </div>
+
     </div>
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>Contact Us</h2>
+            <h2><a name="contact-us">Contact Us</a></h2>
             <p>If you have any questions or comments about FastMRT, please contact us at <a
                 href="mailto:fastmr.thermometry@gmail.com">fastmr.thermometry@gmail.com</a>.</p>
           </div>
@@ -163,8 +147,8 @@
       <!-- <p>Footer</p> -->
       <div class="container">
         <div class="row">
-          <div class="col-sm-10">
-            <h2 class="text-center"> fastMRT Dataset Sharing Agreement </h2>
+          <div class="col-sm-12">
+            <h2 class="text-center"><a name="download"> fastMRT Dataset Sharing Agreement </a></h2>
             <br>
             <br>
             By registering for downloads from the fastMRT Dataset, I agree to
@@ -197,7 +181,7 @@
                   <li>Maintain the security and confidentiality of the fastMRT Dataset and use appropriate safeguards to prevent any unauthorized use or disclosure of the fastMRT Dataset.</li>
                 </ol>
               </li>
-              <li>I agree all publications and presentations resulting from any use of the fastMRT Dataset must cite use of the fastMRT Dataset as follows:
+              <!-- <li>I agree all publications and presentations resulting from any use of the fastMRT Dataset must cite use of the fastMRT Dataset as follows:
                 <ol type="a">
                   <li>In any published abstract, I will cite “BME-SJTU fastMRT” as the source of the data in the abstract.</li>
                   <li>In any published manuscripts using data from BME-SJTU fastMRT,
@@ -225,7 +209,7 @@
                     literature or in any form of publicity without the prior
                     written approval of BME-SJTU. </li>
                 </ol>
-              </li>
+              </li> -->
               <li>I will make no attempt to use the information in the fastMRT
                 Dataset to identify the individual subjects or to contact such
                 individuals or link the fastMRT Dataset with any other dataset.
@@ -280,16 +264,16 @@
 
     <div class="container text-center"> <br>
       <br>
-      By entering my electronic signature here, I agree to the data use
-      agreement above.<br>
+      <p style="color: red;"> <b>By entering my electronic signature here, I agree to the data use agreement above.</b></p>
       <br>
-      <br>
-      <form action="" method="post"> 
+      <!-- <form action="" method="post"> 
         <div class="input text"> <label for="name">Full Name:</label> <input id="name" name="name" required type="text" value=""> </div>
         <div class="input text"> <label for="email">Email:</label> <input id="email" name="email" required type="text" value=""> </div>
         <div class="input text"> <label for="institution">Institution:</label> <input id="institution" name="institution" required type="text" value=""> </div>
         <button type="button" onclick="submitForm()">Submit</button>
-      </form>
+      </form> -->
+      <p style="color: red;">Please send your real name, affiliation, and email with the subject "FastMRT Data Set Request" to <a href="mailto:fastmr.thermometry@gmail.com">fastmr.thermometry@gmail.com</a>. 
+        We will review your application within 24 hours and send the download link to the provided email.</p>
       <br>
       <br>
       <br>
